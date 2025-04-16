@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Small and mark</title>
+    </head>
+    <body>
+        <p>My cat is very <small>small</small>.</p>
+        <p>Remember to buy more <mark>cat food!</mark></p>
+    </body>
+</html>
