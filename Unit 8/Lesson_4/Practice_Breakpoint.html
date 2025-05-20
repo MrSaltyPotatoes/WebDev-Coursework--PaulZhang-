@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Adaptive Design Example</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+            }
+
+            header,
+            .content,
+            footer {
+                padding: 20px;
+                text-align: center;
+            }
+
+            /* Default style for desktop */
+            header {
+                background-color: skyblue;
+            }
+
+            .content {
+                background-color: lightgray;
+            }
+
+            footer {
+                background-color: lightcoral;
+            }
+
+            /* Style for tablet devices */
+            @media (max-width: 768px) {
+                header {
+                    background-color: lightgreen;
+                }
+
+                .content {
+                    background-color: lightyellow;
+                }
+
+                footer {
+                    background-color: lightblue;
+                }
+            }
+
+            /* Style for mobile devices */
+            @media (max-width: 480px) {
+                header,
+                footer {
+                    padding: 10px;
+                    font-size: 14px;
+                }
+
+                .content {
+                    background-color: lightpink;
+                }
+
+                .content p {
+                    font-size: 12px;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>My Website Header</header>
+        <div class="content">
+            <p>Welcome to my website. This is the content area.</p>
+        </div>
+        <footer>Website Footer</footer>
+    </body>
+</html>

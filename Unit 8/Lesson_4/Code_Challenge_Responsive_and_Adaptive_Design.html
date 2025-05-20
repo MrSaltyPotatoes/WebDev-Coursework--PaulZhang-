@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>Sunrise Hills Community</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpeg" href="favicon.jpg">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f6fbff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            font-size: 30px;
+            color: #1e88e5;
+        }
+
+        p {
+            font-size: 18px;
+            background-color: #178fe4;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        h3 {
+            font-size: 24px;
+            color: #25e0ca;
+            margin-bottom: 10px;
+        }
+
+        ul, ol {
+            font-size: 18px;
+            padding-left: 30px;
+        }
+
+        img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border: 5px solid #1e88e5;
+            border-radius: 20px;
+            display: block;
+            margin: 20px auto;
+        }
+
+        a:link {
+            color: red;
+            text-decoration: underline;
+        }
+
+        a:hover {
+            color: green;
+            background-color: blue;
+            text-decoration: none;
+        }
+
+        a:active {
+            color: yellow;
+            background-color: purple;
+        }
+
+        a:visited {
+            color: rgb(9, 142, 225);
+            text-decoration: underline;
+        }
+
+        .highlight {
+            background-color: yellow;
+        }
+
+        .box {
+            width: 85%;
+            margin: 20px auto;
+            padding: 20px;
+            border: 3px solid #0055aa;
+            background-color: rgb(30, 114, 209);
+            color: white;
+            border-radius: 10px;
+        }
+
+        .relative-box {
+            position: relative;
+            top: 10px;
+        }
+
+        .absolute-box {
+            position: absolute;
+            top: 40px;
+            right: 40px;
+            width: 250px;
+            padding: 15px;
+            background-color: #ffa500;
+            border-radius: 10px;
+            color: black;
+        }
+
+        .fixed-box {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            width: 200px;
+            text-align: center;
+        }
+
+        .sticky-box {
+            position: sticky;
+            top: 0;
+            background-color: #ffcc00;
+            color: black;
+            padding: 10px;
+            text-align: center;
+            z-index: 100;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .inline-buttons button {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        .inline-block-gallery div {
+            display: inline-block;
+            margin: 5px;
+        }
+
+        .flex-event-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+            background-color: #e6f2ff;
+            padding: 15px;
+        }
+
+        .flex-event-container div {
+            background-color: #cde3ff;
+            padding: 10px;
+            border-radius: 10px;
+            width: 30%;
+            text-align: center;
+        }
+
+        .grid-facilities {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+            background-color: #f3faff;
+            padding: 15px;
+            margin: 20px;
+            width: 85%;
+        }
+
+        .grid-facilities div {
+            background-color: #d4ecff;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        /* Responsive Design Media Queries */
+        @media (max-width: 1024px) {
+            .flex-event-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .flex-event-container div {
+                width: 80%;
+                margin-bottom: 15px;
+            }
+
+            .grid-facilities {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 22px;
+            }
+
+            p, .grid-facilities div, .flex-event-container div {
+                font-size: 14px;
+            }
+
+            .inline-buttons button {
+                display: block;
+                width: 100%;
+                margin: 5px 0;
+            }
+
+            .grid-facilities {
+                grid-template-columns: 1fr;
+            }
+
+            .inline-block-gallery div {
+                width: 80px !important;
+                height: 80px !important;
+            }
+
+            .absolute-box {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sticky-box">
+        🌞 Welcome to Sunrise Hills Community Website
+    </div>
+
+    <h1 title="Welcome to Sunrise Hills!"><strong>Sunrise Hills Community</strong></h1>
+
+    <p class="hidden">This paragraph will not be displayed.</p>
+
+    <div class="box relative-box">
+        <p title="Information about our neighborhood.">
+            This website provides details about <strong>Sunrise Hills</strong> — a vibrant neighborhood known for its
+            <span class="highlight">friendly atmosphere</span>, <span class="highlight">safe environment</span>, and beautiful parks.
+        </p>
+        <div class="inline-buttons">
+            <button>Join Us</button>
+            <button>Visit</button>
+            <button>Donate</button>
+        </div>
+    </div>
+
+    <div class="grid-facilities">
+        <div>Community Center</div>
+        <div>Public Library</div>
+        <div>Fitness Gym</div>
+    </div>
+
+    <div class="box">
+        <h3>Parks & Nature</h3>
+        <div class="inline-block-gallery">
+            <div style="width: 100px; height: 100px; background-color: red;"></div>
+            <div style="width: 100px; height: 150px; background-color: blue;"></div>
+            <div style="width: 150px; height: 150px; background-color: green;"></div>
+            <div style="width: 75px; height: 100px; background-color: purple;"></div>
+        </div>
+    </div>
+
+    <div class="box">
+        <h3>Community Events</h3>
+        <div class="flex-event-container">
+            <div>
+                <strong>Monthly Farmer’s Market</strong><br>
+                Fresh produce every first Sunday!
+            </div>
+            <div>
+                <strong>Community Meeting</strong><br>
+                Join local discussions and planning.
+            </div>
+            <div>
+                <strong>Volunteer Day</strong><br>
+                Help keep Sunrise Hills beautiful.
+            </div>
+        </div>
+    </div>
+
+    <div class="absolute-box">
+        🌳 Don’t forget to visit Willow Lake this weekend!
+    </div>
+
+    <div class="fixed-box">
+        📞 Contact Us: (555) 123-4567
+    </div>
+
+</body>
+</html>
