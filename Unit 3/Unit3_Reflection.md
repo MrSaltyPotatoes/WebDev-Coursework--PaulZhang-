@@ -1,4 +1,4 @@
-# 🧭 Reflection on Unit 3: Knowing Your Audience
+# 🧭 Reflection on Unit: Knowing Your Audience
 
 In Unit 3, I learned that to build a **successful website**, the first thing I need to do is **understand who the users are**. This means finding my **target audience** — the group of people the website is made for.
 
