@@ -1,4 +1,4 @@
-# Unit 1 Reflection
+# Reflection on Unit: how to build a webpage
 
 In Unit 1, I learned how to create a basic website using HTML. Even though the website I built might be one of the most boring websites in the world — since it doesn’t have any interactive features yet — I still feel proud of what I’ve made. It was my first time building something that could actually appear on the internet, and that gave me a real sense of accomplishment.
 
